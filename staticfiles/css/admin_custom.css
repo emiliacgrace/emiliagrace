@@ -35,3 +35,7 @@ input[type="submit"] {
 #content h1 {
     color: #ff2e7e;
 }
+
+button.theme-toggle {
+    display: none !important;
+}
