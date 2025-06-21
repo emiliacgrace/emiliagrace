@@ -3,7 +3,7 @@ from blog import views
 from blog.admin import admin_site
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.home, name='home'),
     path('post/<slug:slug>/', views.blog_detail, name='blog_detail'),
     path("admin/", admin_site.urls),
 ]
