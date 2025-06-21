@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+{% if post.use_code_highlighting %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+  <div class="blog-post">
+    <h2>{{ post.title }}</h2>
+    <p><em>{{ post.published_date }}</em></p>
+    <div>{{ post.content|safe|linebreaks }}</div>
+  </div>
+{% endblock %}

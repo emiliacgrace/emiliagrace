@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>{% block title %}Emilia Grace{% endblock %}</title>
+    <style>
+        header {
+            background-color: #ff77bc;
+            padding: 1.5rem;
+            padding-left: 5rem;
+            color: #fff;
+            font-family: "Funnel Display", sans-serif;
+            font-weight: 600;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 7.5rem;
+        }
+
+        header p {
+            padding-left: 5rem;
+            margin-top: 0rem;
+            font-size: 2rem;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Karla", sans-serif;
+            background-color: #ffcae5;
+            color: #7f0040;
+        }
+
+        .blog-post {
+            margin: 3rem auto;
+            width: 80vw;
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            color: #7f0040;
+        }
+
+        .home-page .blog-post:hover {
+            background-color: #fcedf5;
+            transition: background-color 0.2s;
+        }
+
+        .blog-post h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 2rem;
+        }
+
+        .blog-post p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        code {
+            background-color: #ffaed7;
+            padding: 0 4px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95rem;
+            color: #7f0040;
+        }
+
+        pre {
+            background-color: #7f0040;
+            padding-left: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        pre p {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        pre code {
+            background: none !important;
+            font-family: monospace;
+            font-size: 0.95rem;
+            color: #fff;
+        }
+
+        .hljs {
+            color: #fff !important;
+            line-height: 1 !important;
+        }
+
+        .hljs-keyword,
+        .hljs-built_in,
+        .hljs-selector-tag {
+            color: #ffaed7;
+            font-weight: bold;
+        }
+        
+        .hljs-title,
+        .hljs-function, 
+        .hljs-title {
+            color: #bae1ff !important;
+            font-weight: bold;
+        }
+
+        .hljs-number,
+        .hljs-symbol,
+        .hljs-variable,
+        .hljs-template-variable {
+            color: #caffbf !important;
+        }
+
+        .hljs-string,
+        .hljs-attr,
+        .hljs-attribute,
+        .hljs-template-tag {
+            color: #ffdfba !important;
+        }
+
+        .hljs-comment,
+        .hljs-quote {
+            color: #baffc9 !important;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            color: #ff77bc;
+        }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+    <header>
+        <h1>Emilia Grace</h1>
+        <p>Girly computer nonsense 💕</p>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        Love ya!
+    </footer>
+</body>
+</html>

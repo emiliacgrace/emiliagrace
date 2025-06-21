@@ -1,0 +1,41 @@
+body {
+    background-color: #ffe3f2;
+    color: #4b0032;
+    font-family: 'Karla', sans-serif;
+}
+
+#header {
+    background: #ff5c99;
+    color: white;
+}
+
+.module caption,
+.module h2,
+.dashboard .module h2 {
+    background: #ff8fb8;
+    color: white;
+}
+
+a:link,
+a:visited {
+    color: #ff2e7e;
+}
+
+a:hover {
+    color: #b30047;
+}
+
+.button.default,
+input[type="submit"] {
+    background-color: #ff5c99;
+    border: none;
+    color: white;
+}
+
+#content h1 {
+    color: #ff2e7e;
+}
+
+button.theme-toggle {
+    display: none !important;
+}
