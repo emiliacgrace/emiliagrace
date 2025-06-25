@@ -8,7 +8,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
-print("Allowed:", ALLOWED_HOSTS)
 
 # Application definition
 
