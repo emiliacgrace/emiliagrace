@@ -4,7 +4,7 @@ from .models import BlogPost
 
 def home(request):
     posts = BlogPost.objects.order_by('-published_date')
-    return render(request, 'home.html', {'posts': posts})
+    return render(request, 'blog/home.html', {'posts': posts})
 
 
 def blog_detail(request, slug):

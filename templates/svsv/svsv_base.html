@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+  <style>
+    body {
+        background-image: url("{% static 'svsv/svsv_bg.png' %}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        font-family: "Karla", sans-serif;
+        color: #000000;
+    }
+    header {
+        margin: 1.5rem auto;
+        width: clamp(90%, 12vw, 70%);
+        max-width: 1200px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        background-color: #ffffff;
+        text-align: center;
+        font-family: "Funnel Display", sans-serif;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    header h1 {
+        font-size: clamp(0.5rem, 7.5vw, 4rem);
+    }
+
+    .content {
+        margin: 1.5rem auto;
+        padding-left: 1.5rem;
+        max-width: 1200px;
+        width: clamp(90%, 12vw, 70%);
+        box-sizing: border-box;
+        border-radius: 16px;
+        background-color: #ffffff;
+    }
+
+    footer {
+        text-align: center;
+        margin: 1.5rem auto;
+        margin-bottom: 5rem;
+        color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stardew Valley Schedule Viewer</h1>
+  </header>
+
+  <div class="content">
+    {% block content %}{% endblock %}
+  </div>
+
+  <footer>
+      &copy; Emilia Grace 2025
+  </footer>
+</body>
+</html>
